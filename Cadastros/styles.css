@@ -1,0 +1,25 @@
+:root {
+	--texto-principal: #E0FFFF;
+	--cor-de-fundo: #88D8C0;
+	--titulo-principal: #00FFFF;
+	--fonte-principal: 'Sour Gummy';
+}
+
+* {
+	margin: 0.1em;
+	padding: 0.1em;
+	width: 99%;
+}
+
+body {
+	background-color: var(--cor-de-fundo);
+	color: var(--texto-principal);
+	font-family: var(--fonte-principal);
+	font-size: 15px;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	padding: 2em;
+	border: solid;
+	width: 300px;
+}
