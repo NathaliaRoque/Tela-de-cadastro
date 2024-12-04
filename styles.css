@@ -1,0 +1,124 @@
+:root {
+	--texto-principal: #E0FFFF;
+	--cor-de-fundo: #88D8C0;
+	--titulo-principal: #00FFFF;
+	--fonte-principal: 'Sour Gummy';
+	--cor-de-fundo-caixa: #E0FFFF;
+	--cor-botao: cadetblue;
+	--cor-rover: darkgreen;
+	--texto-aviso: dimgray;
+}
+
+body {
+	background-color: var(--cor-de-fundo-caixa);
+	color: var(--texto-principal);
+	font-family: var(--fonte-principal);
+	font-size: 15px;
+}
+
+* {
+	margin: 0.1em;
+	padding: 0.1em;
+	width: 99%;
+}
+
+.principal {
+	align-items: center;
+	text-align: center;
+}
+
+.caixa {
+	display: inline-block;
+}
+
+.caixa__caixa {
+	padding: 1.8em;
+	border: solid;
+	border-radius: 5px;
+	width: 300px;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 2%;
+	background-color: var(--cor-de-fundo)
+}
+
+.caixa__titulo {
+	font-size: 25px;
+	color: var(--titulo-principal);
+}
+
+.caixa__subtitulo {
+	font-size: 15px;
+	color: var(--texto-principal);
+}
+
+.caixa__botao {
+	background-color: var(--cor-botao);
+	border-radius: 5px;
+	padding: 1em;
+	margin-top: 0.8em;
+	color: var(--texto-principal);
+	display: block;
+	text-decoration: none;
+	margin-bottom: 1em;
+	width: 85%;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.caixa__botao:hover {
+	background-color: var(--cor-rover);
+}
+
+form {
+	margin: 0.2px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 15px;
+	margin: 0 0 5px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 1px 5px;
+	padding: 8px 18px;
+	width: 85%;
+	border-radius: 2px;
+}
+
+.enviar {
+	width: 95%;
+	padding: 8px;
+	margin-top: 10px;
+	background-color: var(--cor-botao);
+	color: var(--texto-principal);
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background-color: var(--cor-rover);
+}
+
+.caixa__aviso {
+	font-size: 12px;
+	color: var(--texto-aviso);
+}
+
+.link {
+	font-weight: bold;
+	color: var(--texto-aviso);
+	text-decoration: none;
+}
+
+.link:hover {
+	color: var(--cor-rover);
+}
